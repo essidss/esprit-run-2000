@@ -1,0 +1,30 @@
+///
+SDL_Rect pos_texte;
+pos_texte.x=1000;
+pos_texte.x=100;
+///
+SDL_Surface *texte=NULL;
+///
+TTF_Font *police=NULL;
+///
+SDL_Color policeblanche={ 255, 255, 255};
+///
+
+
+///
+TTF_Init();
+///
+police=TTF_OpenFont("lemonade.ttf",120);
+if(police==NULL)
+{
+printf("impossible de charger a police\n");
+}
+///
+police=TTF_OpenFont("Sweet_Lemonade.ttf",120);
+///
+printf("test12\n");
+texte=TTF_RenderText_Blended(police,"joueur1",policeblanche);
+printf("test11\n");
+///
+
+SDL_BlitSurface(texte,NULL,screen,&pos_texte);
