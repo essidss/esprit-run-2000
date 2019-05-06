@@ -1,0 +1,261 @@
+\hypertarget{fonctions_8c}{}\section{Référence du fichier fonctions.\+c}
+\label{fonctions_8c}\index{fonctions.\+c@{fonctions.\+c}}
+
+
+Testing Program.  
+
+
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}defs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fonctions.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de fonctions.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fonctions_8c_a2fc4a26bc908975d513c079e2f366aec}{init\+Perso} (\hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em to initialise the characters \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_a39108d4c6aba3f40f3b16142e074f5a5}{free\+Perso} (\hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} $\ast$P)
+\begin{DoxyCompactList}\small\item\em to frre the characters \end{DoxyCompactList}\item 
+int \hyperlink{fonctions_8c_aad1f82eb6e72b4f0b7165f6a10b341a9}{load\+Perso\+Images} (\hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em to load the characters pictures \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_abf02d44e155c4ce52319ef802acaf98f}{move\+Perso} (\hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} $\ast$P, \hyperlink{structBackground}{Background} $\ast$B, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em to move the characters \end{DoxyCompactList}\item 
+int \hyperlink{fonctions_8c_aa8244c3d8654d4cc4a93c96e717bfa04}{load\+Background} (\hyperlink{structBackground}{Background} $\ast$Backg)
+\begin{DoxyCompactList}\small\item\em to load the background Backg. \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_a87c0db24a7d3d7a15da30c98a14976b4}{init\+Background} (\hyperlink{structBackground}{Background} $\ast$Backg)
+\begin{DoxyCompactList}\small\item\em to initialise the background Backg. \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_a24afb6b60cad85ed678c9475a412928f}{blit\+Background} (\hyperlink{structBackground}{Background} $\ast$Backg, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to show the background b. \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_aa713358cd9ee4f9884b9f804875d5f13}{free\+Background} (\hyperlink{structBackground}{Background} $\ast$Backg)
+\begin{DoxyCompactList}\small\item\em to free the background b. \end{DoxyCompactList}\item 
+int \hyperlink{fonctions_8c_ad9c436fc5815440f57648231b18e2caf}{jouer} (S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to play the game \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_aa0d25afd64758716ee7c2f94b0b60ec0}{afficher\+\_\+perso} (\hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} perso, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to show the characters perso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Testing Program. 
+
+\begin{DoxyAuthor}{Auteur}
+axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Apr 24, 2019 Testing program related to the characters 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\index{fonctions.\+c@{fonctions.\+c}!afficher\+\_\+perso@{afficher\+\_\+perso}}
+\index{afficher\+\_\+perso@{afficher\+\_\+perso}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{afficher\+\_\+perso(\+P\+E\+R\+S\+O\+N\+A\+G\+E perso, S\+D\+L\+\_\+\+Surface $\ast$screen)}{afficher_perso(PERSONAGE perso, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+\_\+perso (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+R\+S\+O\+N\+A\+GE}}]{perso, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_aa0d25afd64758716ee7c2f94b0b60ec0}{}\label{fonctions_8c_aa0d25afd64758716ee7c2f94b0b60ec0}
+
+
+to show the characters perso. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em screen} & the screen \\
+\hline
+{\em $\ast$perso} & the characters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!blit\+Background@{blit\+Background}}
+\index{blit\+Background@{blit\+Background}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{blit\+Background(\+Background $\ast$\+Backg, S\+D\+L\+\_\+\+Surface $\ast$screen)}{blitBackground(Background *Backg, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void blit\+Background (
+\begin{DoxyParamCaption}
+\item[{{\bf Background} $\ast$}]{Backg, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_a24afb6b60cad85ed678c9475a412928f}{}\label{fonctions_8c_a24afb6b60cad85ed678c9475a412928f}
+
+
+to show the background b. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em screen} & the screen \\
+\hline
+{\em b} & the background \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!free\+Background@{free\+Background}}
+\index{free\+Background@{free\+Background}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{free\+Background(\+Background $\ast$\+Backg)}{freeBackground(Background *Backg)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Background (
+\begin{DoxyParamCaption}
+\item[{{\bf Background} $\ast$}]{Backg}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_aa713358cd9ee4f9884b9f804875d5f13}{}\label{fonctions_8c_aa713358cd9ee4f9884b9f804875d5f13}
+
+
+to free the background b. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em b} & the background \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!free\+Perso@{free\+Perso}}
+\index{free\+Perso@{free\+Perso}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{free\+Perso(\+P\+E\+R\+S\+O\+N\+A\+G\+E $\ast$\+P)}{freePerso(PERSONAGE *P)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Perso (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+R\+S\+O\+N\+A\+GE} $\ast$}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_a39108d4c6aba3f40f3b16142e074f5a5}{}\label{fonctions_8c_a39108d4c6aba3f40f3b16142e074f5a5}
+
+
+to frre the characters 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$p} & the \hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!init\+Background@{init\+Background}}
+\index{init\+Background@{init\+Background}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{init\+Background(\+Background $\ast$\+Backg)}{initBackground(Background *Backg)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Background (
+\begin{DoxyParamCaption}
+\item[{{\bf Background} $\ast$}]{Backg}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_a87c0db24a7d3d7a15da30c98a14976b4}{}\label{fonctions_8c_a87c0db24a7d3d7a15da30c98a14976b4}
+
+
+to initialise the background Backg. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$\+Backg} & the background \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!init\+Perso@{init\+Perso}}
+\index{init\+Perso@{init\+Perso}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{init\+Perso(\+P\+E\+R\+S\+O\+N\+A\+G\+E $\ast$perso)}{initPerso(PERSONAGE *perso)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Perso (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+R\+S\+O\+N\+A\+GE} $\ast$}]{perso}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_a2fc4a26bc908975d513c079e2f366aec}{}\label{fonctions_8c_a2fc4a26bc908975d513c079e2f366aec}
+
+
+to initialise the characters 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$perso} & the \hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!jouer@{jouer}}
+\index{jouer@{jouer}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{jouer(\+S\+D\+L\+\_\+\+Surface $\ast$screen)}{jouer(SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}int jouer (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_ad9c436fc5815440f57648231b18e2caf}{}\label{fonctions_8c_ad9c436fc5815440f57648231b18e2caf}
+
+
+to play the game 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em screen} & the screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!load\+Background@{load\+Background}}
+\index{load\+Background@{load\+Background}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{load\+Background(\+Background $\ast$\+Backg)}{loadBackground(Background *Backg)}}]{\setlength{\rightskip}{0pt plus 5cm}int load\+Background (
+\begin{DoxyParamCaption}
+\item[{{\bf Background} $\ast$}]{Backg}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_aa8244c3d8654d4cc4a93c96e717bfa04}{}\label{fonctions_8c_aa8244c3d8654d4cc4a93c96e717bfa04}
+
+
+to load the background Backg. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$\+Backg} & the background \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!load\+Perso\+Images@{load\+Perso\+Images}}
+\index{load\+Perso\+Images@{load\+Perso\+Images}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{load\+Perso\+Images(\+P\+E\+R\+S\+O\+N\+A\+G\+E $\ast$perso)}{loadPersoImages(PERSONAGE *perso)}}]{\setlength{\rightskip}{0pt plus 5cm}int load\+Perso\+Images (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+R\+S\+O\+N\+A\+GE} $\ast$}]{perso}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_aad1f82eb6e72b4f0b7165f6a10b341a9}{}\label{fonctions_8c_aad1f82eb6e72b4f0b7165f6a10b341a9}
+
+
+to load the characters pictures 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$perso} & the Personage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\index{fonctions.\+c@{fonctions.\+c}!move\+Perso@{move\+Perso}}
+\index{move\+Perso@{move\+Perso}!fonctions.\+c@{fonctions.\+c}}
+\subsubsection[{\texorpdfstring{move\+Perso(\+P\+E\+R\+S\+O\+N\+A\+G\+E $\ast$\+P, Background $\ast$\+B, Uint32 dt)}{movePerso(PERSONAGE *P, Background *B, Uint32 dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+Perso (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+R\+S\+O\+N\+A\+GE} $\ast$}]{P, }
+\item[{{\bf Background} $\ast$}]{B, }
+\item[{Uint32}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{fonctions_8c_abf02d44e155c4ce52319ef802acaf98f}{}\label{fonctions_8c_abf02d44e155c4ce52319ef802acaf98f}
+
+
+to move the characters 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$P} & the \hyperlink{structPERSONAGE}{P\+E\+R\+S\+O\+N\+A\+GE} \\
+\hline
+{\em b} & the background \\
+\hline
+{\em dt} & the Uint32 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nothing 
+\end{DoxyReturn}
